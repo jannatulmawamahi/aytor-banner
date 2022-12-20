@@ -1,0 +1,56 @@
+ /*Template Name: Aytor
+ version:1.0.0
+ Author Name:Aytor
+ Author Url:
+ 
+ Table of content
+ ===================
+ 1) Nav section
+
+ */
+
+/*common css*/
+body{
+    font-family: 'Roboto', sans-serif;
+}
+h1,h2,h3,h4,h5,h6,a,button{
+font-family: 'josefin sans' , sans-serif;
+}
+ h1,h2,h3,h4,h5,h6,p,small,span,ol,ul{
+   margin:0;
+   padding: 0;
+}
+ol,ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+/*common css end*/
+
+#banner .banner_slider_item{
+    height: 800px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+}
+#banner .banner_slider_item::after{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient( to right, rgba(2,5,19,.7),rgba(0,0,0,0),black);
+    z-index: -1;
+}
+#banner .banner_slider_item h4,h1,a,p{
+    color: aliceblue;
+}
+#banner .banner_slider_item a{
+    border: 2px solid #ff6f61;
+    padding: 5px;
+    background-color: #ff6f61;
+}
+#banner .banner_slider_item p{
+    margin-top:10px ;
+    margin-bottom: 10px;
+}
